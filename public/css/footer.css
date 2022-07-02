@@ -1,0 +1,24 @@
+.pie{
+    background-color: var(--grisClaro);
+    text-align: center;
+}
+.pie *{
+    margin: 0;
+}
+.pie h3{
+    color:var(--grisOscuro);
+  
+    
+}
+
+.pie i{
+    color:var(--celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top:20%;
+}
+.pie h4{
+    color:var(--grisOscuro);
+    margin-top: 20%;
+}
+
