@@ -1,5 +1,14 @@
+.cuerpo{
+    width: 90VW;
+    margin: auto;
+    background-color: var(--grisClaro);
+    padding: 10% 0;
+    
+}
 .cuerpo h3 {
     font-size: 24px;
+    color: var(--grisOscuro);
+    text-align: center;
 }
 .cuerpo div p {
     font-size: 16px;
@@ -8,4 +17,49 @@
 .precio{
     font-size: 18px;
     margin-bottom: 0%;
+}
+.cuerpo div article {
+    border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    padding: 15px;
+    
+    background-color: white;
+}
+.artimg{
+    text-align: center;
+}
+.descripcion{
+    display: none;
+}
+.descuento{
+    color:var(--verde)
+}
+.truck{
+    
+    border-radius: 20%;
+    
+}
+.truck i{
+    font-size: 1em;
+    padding: 1vh;
+    border:1px solid var(--verde);
+    color: var(--verde);
+    border-radius: 50%;
+}
+@media(min-width:460px) {
+    .descripcion{
+        display: inline-block;
+    }
+    .cuerpo div article{
+        box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    }
+}
+@media(min-width:768px) {
+    .descripcion{
+        display: inline-block;
+    }
+    .cuerpo div article{
+        box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    }
+
 }

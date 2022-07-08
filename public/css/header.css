@@ -1,18 +1,22 @@
 .cabeza{
    
-    background-color: var(--amarillo)
+    background-color: var(--amarillo);
+    padding-bottom: 2%;
 }
-.cabeza ul li{
+.cabeza div ul li{
     list-style: none;
-    margin-left: 0%;
+    margin-left: 2%;
 }
-.cabeza ul li a{
+.cabeza div ul li a{
     text-decoration: none;
     color:black;
 }
-.cabeza ul{
+.cabeza div ul{
     padding:0% ;
+    margin: 0%;
+    display: none;
 }
+
 .busqueda{
     margin-left: 10%;
 }
@@ -37,4 +41,39 @@
 .cabeza img{
     margin: 10%;
     width: 40%;
+}
+@media(min-width:460px) {
+    .bmenu{
+        display: none;
+     }
+     .cabeza div ul{
+        
+        display: block;
+        
+    }
+   
+    .cabeza img{
+        margin: 2%;
+        width: 20%;
+    }
+ 
+}
+@media(min-width:768px) {
+    .bmenu{
+       display: none;
+    }
+    .cabeza div ul{
+        
+        display: block;
+
+    }
+    ul:last-child{
+        margin-bottom: 30%;
+     }
+    .cabeza img{
+        margin: 2%;
+        width: 20%;
+    }
+ 
+
 }
