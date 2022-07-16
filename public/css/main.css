@@ -1,11 +1,106 @@
+.cuerpo{
+    width: 90VW;
+    margin: auto;
+    background-color: var(--grisClaro);
+    padding: 10% 0;
+    
+}
 .cuerpo h3 {
     font-size: 24px;
+    color: var(--grisOscuro);
+    text-align: center;
 }
 .cuerpo div p {
     font-size: 16px;
     margin-top: 0%;
 }
-.precio{
-    font-size: 18px;
+.cuerpo .artprecio{
+    width: 70%;
+}
+.cuerpo .precio{
+    padding: 0%;
+    font-size: 1em;
     margin-bottom: 0%;
+    flex-grow: 0.3;
+    
+   
+}
+.cuerpo div section article section{
+    display: flex;
+    
+}
+.cuerpo div article {
+    border-top: 1px solid #ebebeb;
+    margin-top: 10px;
+    padding: 15px;
+    
+    background-color: white;
+}
+
+.artimg{
+    text-align: center;
+}
+.artdescrip{
+    height: 20%;
+}
+.descripcion{
+    display: none;
+}
+
+.descuento{
+    color:var(--verde);
+    flex-grow: 0.7;
+    margin-bottom: 1%;
+}
+.truck{
+    display: flex;
+    justify-content: flex-end;
+}
+.truck i{
+    font-size: 1em;
+    padding: 1vh;
+    border:1px solid var(--verde);
+    color: var(--verde);
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+}
+@media(min-width:460px) {
+    
+    .cuerpo div section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+     .descripcion{
+        display: block;
+        
+        
+    }
+    .cuerpo div h3{
+        text-align: left;
+    }
+    .cuerpo div section article{
+        box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+        
+        width: 45%;
+        margin: 2%;
+    }
+}
+@media(min-width:768px) {
+    .cuerpo div section{
+        flex-wrap: nowrap;
+        
+    }
+    .cuerpo div section article{
+        width: 30%;
+        
+        margin: 2%;
+    }
+
 }

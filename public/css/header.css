@@ -1,31 +1,32 @@
+
 .cabeza{
-   
-    background-color: var(--amarillo)
+    background-color: var(--amarillo);
+    padding-bottom: 2%;
 }
-.cabeza ul li{
+.cabeza nav ul li{
     list-style: none;
-    margin-left: 0%;
+    margin-left: 2%;
 }
-.cabeza ul li a{
+.cabeza nav ul li a{
     text-decoration: none;
     color:black;
 }
-.cabeza ul{
+.cabeza nav ul{
     padding:0% ;
+    margin: 0%;
+    display: none;
 }
-.busqueda{
-    margin-left: 10%;
-}
+
 .cabeza h5{
     display: flex;
-  justify-content: center;
+    justify-content: center;
     
 }
 .bmenu{
     margin-left: 45%;
     margin-bottom: 10%;
     width: 10%;
-    
+    border:none;
     background-color: var(--celeste);
     
 }
@@ -34,7 +35,98 @@
     color:white;
 
 }
-.cabeza img{
-    margin: 10%;
-    width: 40%;
+.cabeza section{
+    display:flex;
+    
+}
+.cabeza section .busqueda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0.5;
+}
+.cabeza section .busqueda input{
+    height: 50%;
+    border-radius: 5%;
+    border:none;
+}
+.cabeza section .busqueda button{
+    height: 50%;
+    border-radius: 5%;
+    border:none;
+}
+.cabeza section img{
+    
+    width: 50vw;
+    padding:5%;
+    flex-grow: 0.5;
+}
+
+@media(min-width:460px) {
+    .cabeza{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cabeza section .busqueda input{
+        height: 20%;
+        width: 60%;
+    }
+    .cabeza section .busqueda button{
+        height: 20%;
+        margin-left: 1%;
+    }
+
+    .bmenu{
+        display: none;
+     }
+    .cabeza section{
+        flex-grow: 0.7;
+     }
+    .cabeza nav{
+        display: flex;
+        width: 100%;
+        margin-top: 45px;
+    }
+     .cabeza nav ul{
+        flex-grow: 0.5;
+        display: flex;
+        
+    }
+    .cabeza nav .cuenta{
+        justify-content: flex-end;
+    }
+    
+    .cabeza section img{
+        padding: 2%;
+        width: 40%;
+        flex-grow: 0.3;
+    }
+    .cabeza h5{
+        display: flex;
+        align-items: center;
+        
+    }
+    .cabeza ul li{
+        margin: 1%;
+    }
+    .cabeza nav{
+        font-size: 15px ;
+       }
+       
+ 
+}
+@media(min-width:768px) {
+    
+    .cabeza nav{
+      
+        margin-top: 2%;
+    }
+    .cabeza section img{
+        padding: 1%;
+        width: 25%;
+        
+    }
+ 
+
 }
